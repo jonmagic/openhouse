@@ -1,0 +1,275 @@
+/* CSS Document */
+
+body {
+	background-color:#2a65ad;
+	margin:0px;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	color:#323647;
+}
+
+a {
+	color:#2a65ad;
+}
+
+a:hover {
+	text-decoration:none;
+}
+
+h1 {
+	font-family:Arial;
+	font-size:25px;
+	font-weight:normal;
+}
+
+
+code { overflow: auto }
+pre { overflow: auto }
+
+#page_description {
+  font-size: 1.45em;
+  padding: 0 22px 0;
+  line-height:135%;
+  margin-bottom:20px;
+  }
+
+/* THE AREA THAT CONTAINS THE STONE IMAGE AND THE WEBSITE TITLE */
+
+#title {
+	margin:0 auto 0 auto;
+	text-align:center;
+}
+
+#title h1 {
+  font-style:italic;
+}
+
+#title p {
+	font-variant:small-caps;
+	letter-spacing:2px;
+}
+
+/* PROPERTIES OF THE HEADER IMAGE */
+
+#title img {
+  margin:0;
+  padding:0;
+	border:none;
+}
+
+/* THE AREA THAT CONTAINS ALL THE CONTENT OF THE WEBSITE */
+
+#container {
+  background-color:#fff;
+	background-image:url(http://www.sabretechllc.com/images/bg1.jpg);
+	background-repeat:repeat-y;
+	width:690px;
+	margin:0 auto 0 auto;
+    padding: 0;
+}
+
+/* THE SIDEBAR WITHIN THE CONTAINER */
+
+#sidebar {
+  font-family:Verdana, Arial;
+  width:140px;
+  margin-right:20px;
+  _margin-right:10px;
+  float:right;
+  text-align:left;
+}
+
+#sidebar h1 {
+	font-size:150%;
+}
+
+#sidebar p {
+  line-height:1.4em;
+}
+
+#sidebar ul {
+  padding:0px;
+  margin:0px;
+  line-height:1.3em;
+}
+
+#sidebar li {
+  list-style:none;
+  padding:0px;
+  margin:0px;
+}
+
+#sidebar a {
+  text-decoration:none;
+}
+
+#sidebar a:hover {
+  text-decoration:underline;
+}
+
+.grey_menu a {
+  color:#323647;
+}
+
+.blue_menu a {
+  color:#2a65ad;
+}
+
+/* Nav Bar */
+
+#nav {
+  background-color:#001e2b;
+  background-image:url(http://www.sabretechllc.com/images/navbar_bg.png);
+  background-repeat:repeat-x;
+  color:#fff;
+  text-align:left;
+  margin:-4px 5px 1.4em 5px;
+}
+
+#nav a {
+  font-family:Helvetica, Verdena, Arial;
+  font-size: 150%;
+  color:#d0e1f1;
+  text-decoration:none;
+  font-weight:lighter;
+  line-height:34px;
+  padding: 0 1em 0 .7em;
+}
+
+#nav a.divider {
+  background:url(http://www.sabretechllc.com/images/nav_divider.png) 100% 50% no-repeat;
+}
+
+#nav a.first {
+  padding-left:17px;
+}
+
+#nav a:hover {
+  text-decoration:underline;
+}
+
+#nav img {
+  vertical-align:top;
+  }
+
+#nav ul {
+  margin:0;
+  padding:0;
+}
+#nav li {
+  display:inline;
+}
+
+/* THE AREA NEXT TO THE SIDEBAR */
+
+#content {
+  margin-left:20px;
+	margin-right:170px;
+	padding-right:20px;
+	border-right:1px solid #d0e1f1;
+	background-image:url(http://www.sabretechllc.com/images/backgrounds/content.jpg);
+	background-position:right;
+	background-repeat:repeat-y;
+  clear:left;
+}
+
+#content h2 {
+  font-family:Verdana, Arial;
+  text-align:left;
+  font-size:200%;
+  margin-bottom:0;
+* margin-top:0;
+}
+
+#content a {
+  text-decoration:none;
+}
+
+#content a:hover {
+  text-decoration:underline;
+}
+
+#content p {
+  font-size: 110%;
+  line-height:1.6em;
+  margin-top:0;
+}
+
+/* stylized boxes for sales and service */
+
+.box_style1 {
+  clear:left;
+  padding-bottom:20px;
+}
+
+.box_style1 img {
+  border: 4px solid #cde0f0;
+  float:left;
+}
+
+.box_style1 img:hover {
+  border: 4px solid #2a65ad;
+}
+
+.box_style1 h2, .box_style1 p {
+  margin-left: 195px;
+}
+
+.box_about a, .box_sabreblog a {
+  font-size:70%;
+}
+
+.box_about {
+  clear:left;
+  float:left;
+  width:220px;
+  font-size: 90%;
+  padding: 0 15px 0 0;
+  margin-top:10px;
+  border-right:1px solid #d0e1f1;
+}
+
+.box_sabreblog {
+  float:left;
+  width:220px;
+  font-size: 90%;
+  padding: 0 0 0 20px;
+  margin-top:10px;
+}
+
+/* THE FOOTER */
+
+#footer {
+	width:660px;
+	margin:0 auto 0 auto;
+	padding:10px;
+	text-align:center;
+	border-top:1px dashed #d0e1f1;
+}
+input {
+	background-color:#eeeeee;
+	padding:5px;
+	border:none;
+	margin:3px;
+	width:300px;
+	font-size:1em;
+}
+
+input.submit {
+  background-color:#edf3fe;
+  color:#000;
+  font-size:1.2em;
+  text-align:center;
+}
+
+input.form_address {
+  width:620px;
+}
+
+input.form_state {
+  width:60px;
+}
+
+input.form_zip {
+  width:120px;
+}

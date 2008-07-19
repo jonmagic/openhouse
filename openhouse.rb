@@ -27,12 +27,17 @@ get "/random" do
   haml :random
 end
 
+get "/all" do
+  @people = Person.all
+  haml :all
+end
+
 ### HELPERS ###
 def random_person
   count = Person.all.length
   number = rand(count) + 1
-  @person = Person[number]
-  return @person
+  person = Person[number]
+  return person
 end
 
 

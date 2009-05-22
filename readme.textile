@@ -1,0 +1,17 @@
+h2. OpenHouse by SabreTech
+
+We use this app once or twice a year at our open houses, to collect names, phones, emails, and addresses. At the end of the open house we access the "random" url to pick winners for our prize drawings.
+
+h3. Required gems?
+
+* sinatra
+* haml
+* dm-core
+* dm-timestamps
+* sqlite3-ruby
+* do_sqlite3
+ 
+h3. Server
+
+I used Passenger with REE, but anything rack compliant will work. For testing I installed the "thin" gem and just ran /opt/ree/bin/ruby openhouse.rb and it started a server at localhost:4567.
+

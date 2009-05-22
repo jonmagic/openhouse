@@ -1,4 +1,4 @@
-$:.unshift File.dirname(__FILE__) + '/sinatra/lib'
+require 'rubygems'
 require 'sinatra'
 require 'dm-core'
 require 'dm-timestamps'

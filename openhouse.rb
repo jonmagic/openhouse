@@ -1,9 +1,8 @@
 require 'rubygems'
 require 'sinatra'
-require 'dm-core'
-require 'dm-timestamps'
+require 'mongo_mapper'
 
-DataMapper.setup(:default, "sqlite3://#{Dir.pwd}/db/openhouse.sqlite3")
+MongoMapper.database = "openhouse"
 
 get '/' do
   haml :index
@@ -34,26 +33,24 @@ end
 
 ### HELPERS ###
 def random_person
-  count = Person.all.length
-  number = rand(count) + 1
-  person = Person[number]
+  people = Person.all
+  number = rand(people.length)
+  person = people[number]
   return person
 end
 
 
 ### SETUP ###
 class Person
-  include DataMapper::Resource
-  property :id,         Integer, :serial => true    # primary serial key
-  property :firstname,  String
-  property :lastname,  String
-  property :phone,  String
-  property :email,  String
-  property :address,  String
-  property :city,  String
-  property :state,  String
-  property :zip,  String
-  property :created_at, DateTime
+  include MongoMapper::Document
+  
+  key :firstname, String
+  key :lastname,  String
+  key :phone,     String
+  key :email,     String
+  key :address,   String
+  key :city,      String
+  key :state,     String
+  key :zip,       String
+  timestamps!
 end
-
-DataMapper.auto_upgrade!

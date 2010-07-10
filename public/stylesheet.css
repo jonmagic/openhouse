@@ -247,7 +247,7 @@ pre { overflow: auto }
 	border-top:1px dashed #d0e1f1;
 }
 input {
-	background-color:#eeeeee;
+	background-color:#dddddd;
 	padding:5px;
 	border:none;
 	margin:3px;
@@ -256,7 +256,7 @@ input {
 }
 
 input.submit {
-  background-color:#edf3fe;
+  background-color:#72a8e6;
   color:#000;
   font-size:1.2em;
   text-align:center;
